@@ -145,6 +145,51 @@
 	<string>This file is for HD3000 1366x768 on 6-series chipset (typical)</string>
 	<key>Devices</key>
 	<dict>
+		<key>AddProperties</key>
+		<array>
+			<dict>
+				<key>Comment</key>
+				<string>Selects mobile HD3000 framebuffer</string>
+				<key>Device</key>
+				<string>IntelGFX</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Key</key>
+				<string>AAPL,snb-platform-id</string>
+				<key>Value</key>
+				<data>
+				AAABAA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>AAPL,os-info required for Snow Leopard 10.6.8 HD3000</string>
+				<key>Device</key>
+				<string>IntelGFX</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Key</key>
+				<string>#AAPL,os-info</string>
+				<key>Value</key>
+				<data>
+				MEkBERERCAAAAfAfAQAAABAHAAA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>hda-gfx=onboard-1 for HDMI audio</string>
+				<key>Device</key>
+				<string>IntelGFX</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Key</key>
+				<string>#hda-gfx</string>
+				<key>Value</key>
+				<data>
+				b25ib2FyZC0xAA==
+				</data>
+			</dict>
+		</array>
 		<key>USB</key>
 		<dict>
 			<key>FixOwnership</key>
@@ -226,7 +271,7 @@
 			<key>ATI</key>
 			<false/>
 			<key>Intel</key>
-			<false/>
+			<true/>
 			<key>NVidia</key>
 			<false/>
 		</dict>
